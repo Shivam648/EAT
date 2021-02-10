@@ -7,3 +7,6 @@ In the typical restaurant scenario: After guests are seated, they wait for a ser
 Now imagine this one: Once seated, customers can immediately view the menu via their tableside ordering system. They can place an order as soon as they are ready, and order additional items whenever and as often as they’d like. The servers are available to answer questions and meet the customers’ needs as they dine. After the meal, they can pay and leave, again via their tabletop ordering system. 
 
 So, That;s why we are come with this concepts to tabletop ordering system or payment system.......!!
+
+<!----[](tabletop.mp4)------>
+![alt text](download.jpg)
