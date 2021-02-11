@@ -31,18 +31,24 @@
         {
             font-size: 13px;
         }
-.mySlides_content{
-    position: relative;
-    overflow:hidden;
+ .btn:hover {
+  background-color: red;
 }
 
-.button{
-    color: #fff;
-    background-color: #c9302c;
-    border-color: #FF5000;
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    padding: 10px 16px;
-    font-size: 18px;
-    border-radius: 6px;
-    -webkit-transition: all 0.5s;
+
+  .btn {
+  position:relative;
+  bottom : 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 14px;
+  text-align: center;
+
 }
