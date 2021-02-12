@@ -38,11 +38,11 @@
 
   .btn {
   position:relative;
-  bottom : 200px;
-  left: 50%;
+  bottom : -28px;
+  left: 43%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: black;
+  background-color: #8087;
   color: white;
   font-size: 16px;
   padding: 12px 24px;
@@ -52,3 +52,38 @@
   text-align: center;
 
 }
+ .buttonbar {
+  position:relative;
+  bottom : 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #0064;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 14px;
+  text-align: center;
+
+}
+ .btn1 {
+  position:relative;
+  bottom : 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #8087;
+  
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 14px;
+  text-align: center;
+
+}
+
+  
+ 
