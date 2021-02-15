@@ -15,6 +15,9 @@
     z-index: -100;
     transition: 1s opacity;
 }
+.container{
+   padding: 0px;
+}
 
 .well
         {
@@ -68,9 +71,12 @@
   text-align: center;
 
 }
+
+
+
  .btn1 {
   position:relative;
-  bottom : 15px;
+  bottom : -10px;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -80,20 +86,21 @@
   padding: 12px 24px;
   border: none;
   cursor: pointer;
-  border-radius: 14px;
+  border-radius: 10px;
   text-align: center;
 
 }
 
 /*********************Our Service*****************************/
 .service-wrp{
-background: rgba(0,0,0,0.7) ;
+background: black ;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
 margin-top: 10px;
 padding-top: 60px;
 padding-bottom: 60px
+padding:0px;
 }
 
 .service-wrp-inner{
@@ -106,7 +113,7 @@ flex-wrap: wrap;
 
 .service-card{
 width: 32%;
-margin: 10px 0
+margin: 5px 0
 }
 
 .service-card h4{
@@ -118,7 +125,7 @@ color: #fff;
 
 .bg-dark{
 background-color: rgba(19, 96, 239, 0.02);
-padding: 30px;
+padding: 10px;
 }
 
 .d-flex{
