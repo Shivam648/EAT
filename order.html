@@ -44,13 +44,19 @@
     
     p 
     { 
+      font-size:  16px;
       display: -webkit-box; 
       -webkit-box-orient: vertical; 
       -webkit-line-clamp: 4; 
       overflow: hidden; 
+      padding-left  :  30px;
+       padding-right: 30px;
+      padding-bottom:   30px;
   
     } 
-    
+    h3{
+      padding-left:  30px;
+    }
     
     .row 
     { 
@@ -88,8 +94,22 @@
       background-color:transparent  ; 
       padding: 0px; 
       border: 1px transparent; 
+      border-radius:  0px;
 
     } 
+.content{
+  cursor: progress;
+  transition: 400ms;
+}
+.content:hover {
+  filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+        
+        box-shadow: inset 0 0 0 25px white;
+}
+
+
+    }
     
     /* window size 850 width set */ 
     @media screen and (max-width: 850px)
@@ -163,7 +183,7 @@
             alt="" style="width:100% ; height:  200px"> 
           <h3> 
 
-            <a style="text-align: center" href="#tea&breakfast">Tea & Breakfast</a> 
+            <a style="text-align: center" href="#tea&breakfast">Tea</a> 
           </h3> 
           <p > 
            Food, substance consisting of protein, carbohydrate, fat, and other nutrients used in the body of an organism to sustain growth and vital processes and to furnish ... 
