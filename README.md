@@ -8,5 +8,5 @@ Now imagine this one: Once seated, customers can immediately view the menu via t
 
 So, That;s why we are come with this concepts to tabletop ordering system or payment system.......!!
 
-<!----[](tabletop.mp4)------>
+<!---------->
 ![alt text](download.jpg)
