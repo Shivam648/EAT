@@ -78,6 +78,15 @@
       background-color:#0064;
       border-radius: 10px; 
 
+    }
+    
+    .column1 
+    { 
+      float:left; 
+      width: 25%; 
+      padding: 10px;
+      border-radius: 20px; 
+      border-color: red;
     } 
     
     .row:after
@@ -91,12 +100,28 @@
     
     .content 
     { 
-      background-color:transparent  ; 
-      padding: 0px; 
+      background-color:black ; 
+      padding: 4px; 
       border: 1px transparent; 
-      border-radius:  0px;
+      border-radius:  10px;
 
     } 
+     .column1 .content 
+    { 
+      background-color:#ffe ; 
+      padding: 10px; 
+      border: 1px blue; 
+      border-radius:  10px;
+
+    } 
+  /*  .column1 .h4{
+      float: center;
+      color: red;
+    }
+    .column1 .h5{
+      float: center;
+      color: red;
+    }*/
 .content{
   cursor: progress;
   transition: 400ms;
@@ -110,14 +135,26 @@
 
 
     }
+.AddToCart button:hover{
+    background:var(--primary);
+    color:var(--heaven);
+}
+    .AddToCart button img{
+    background-color: green;
+    padding:0.50rem;
+    height:32px;
+    margin-right:1.2rem;
+}
+    }
     
     /* window size 850 width set */ 
     @media screen and (max-width: 850px)
      { 
       .column 
       { 
-        width: 50%; 
-      } 
+        width: 100px; 
+      }
+     
     } 
   
     /* window size 400 width set */ 
@@ -125,9 +162,13 @@
     { 
       .column 
       { 
-        width: 50%; 
-      } 
+        width: 100px; 
+      }
+    
     } 
+
+
+
     * { 
       box-sizing: border-box; 
     } 
@@ -155,8 +196,8 @@
          <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li ><a href="index.html">Home</a></li>
+                    <li class="active" ><a href="order.html">Services</a></li>
                     <li><a href="#moto">Our Moto</a></li>
                     <li><a href="#About">About Us</a></li>
                 </ul>
@@ -176,11 +217,13 @@
     <hr> 
 
    
-    <div class="row"> 
-      <div class="column"> 
+    <div class="row">
+
+      <div class="column">
+
         <div class="content" > 
-          <img src= "image/breakfast1.jpg" 
-            alt="" style="width:100% ; height:  200px"> 
+          <a href="#tea&breakfast"><img src= "image/breakfast1.jpg" 
+            alt="" style="width:100% ; height:  200px"> </a>
           <h3> 
 
             <a style="text-align: center" href="#tea&breakfast">Tea</a> 
@@ -192,8 +235,8 @@
       </div> 
       <div class="column"> 
         <div class="content"> 
-          <img src= "image/meal1.jpg"
-            alt="" style="width:100% ; height:  200px"> 
+       <a href="#meal1">   <img src= "image/meal1.jpg"
+            alt="" style="width:100% ; height:  200px"> </a>
           <h3> 
             <a href=" #meal1">Meal</a> 
           </h3> 
@@ -205,8 +248,8 @@
       
      <div class="column"> 
         <div class="content"> 
-          <img src= "image/dinner1.jpg"
-            alt="" style="width:100% ; height:  200px"> 
+          <a href="#dinner1">  <img src= "image/dinner1.jpg"
+            alt="" style="width:100% ; height:  200px"> </a>
           <h3> 
             <a href="#dinner1 ">Dinner</a> 
           </h3> 
@@ -217,8 +260,8 @@
       </div>  
      <div class="column"> 
         <div class="content"> 
-          <img src= "image/fastfood1.jpg"
-            alt="" style="width:100% ; height:  200px"> 
+          <a href="#fastfood1">  <img src= "image/fastfood1.jpg"
+            alt="" style="width:100% ; height:  200px"> </a>
           <h3> 
             <a href="#fastfood1 ">FastFood</a> 
           </h3> 
@@ -229,8 +272,8 @@
       </div>
       <div class="column"> 
         <div class="content"> 
-          <img src= "image/drink1.jpg"
-            alt="" style="width:100% ; height:  200px"> 
+          <a href="#drink1">  <img src= "image/drink1.jpg"
+            alt="" style="width:100% ; height:  200px"> </a>
           <h3> 
             <a href="#drink1 ">Drink</a> 
           </h3> 
@@ -241,8 +284,8 @@
       </div> 
      <div class="column"> 
         <div class="content"> 
-          <img src= "image/nonvage1.jpg"
-            alt="" style="width:100% ; height:  200px"> 
+         <a href="#nonvage1">   <img src= "image/nonvage1.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
           <h3> 
             <a href="#nonvage1">Nonvag</a> 
           </h3> 
@@ -253,52 +296,405 @@
       </div> 
     </div> 
     <hr>
-  <div class="row" style="color: #0064">
-            <div class="col-md-12 well" >
-              <h2><strong style="color: #ffbb2b" id="tea&breakfast">Tea & Breakfast</strong></h2><br>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-              <br>
-              <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-            </div>  
-        </div>
+
+<div class="row" style="color: #0064">
+<div class="col-md-12 well" >
+<h2><strong style="color: #ffbb2b" id="tea&breakfast">Tea & Breakfast</strong></h2><br>
+  <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/breakfast2.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center;">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div> 
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/breakfast3.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                    <img src= "image/breakfast4.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+         <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/breakfast5.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+          <h5 style="color: red; text-align: center;">
+              price : 25 ₹
+            </h5>
+           <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+
+            </div>
+            </div> 
+  </div>
+
+</div>
+
         <div class="row" style="color: #0064">
             <div class="col-md-12 well" >
               <h2><strong style="color: #ffbb2b" id="meal1">Meal</strong></h2><br>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-              <br>
-              <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. "</p>
+              <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/meal5.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div> 
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/meal2.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                    <img src= "image/meal3.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+         <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/meal4.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+          <h5 style="color: red; text-align: center;">
+              price : 25 ₹
+            </h5>
+           <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+
+            </div>
+            </div> 
             </div>  
         </div>
         <div class="row" style="color:#0064">
             <div class="col-md-12 well" >
               <h2><strong style="color: #ffbb2b" id="dinner1">Dinner</strong></h2><br>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-              <br>
-              <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+              <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/dinner2.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div> 
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/dinner3.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                    <img src= "image/dinner4.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+         <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/dinner5.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+          <h5 style="color: red; text-align: center;">
+              price : 25 ₹
+            </h5>
+           <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+
+            </div>
+            </div> 
             </div>  
         </div>
         <div class="row" style="color: #0064">
             <div class="col-md-12 well" >
               <h2><strong style="color: #ffbb2b" id="fastfood1">FastFood</strong></h2><br>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-              <br>
-              <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+              <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/fastfood2.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div> 
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/fastfood3.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                    <img src= "image/fastfood4.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+         <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/fastfood5.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+          <h5 style="color: red; text-align: center;">
+              price : 25 ₹
+            </h5>
+           <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+
+            </div>
+            </div> 
             </div>  
         </div>
         <div class="row" style="color: #0064">
             <div class="col-md-12 well" >
               <h2><strong style="color: #ffbb2b" id="drink1">Drink</strong></h2><br>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-              <br>
-              <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+             <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/drink2.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div> 
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/drink3.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                    <img src= "image/drink4.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+         <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/drink5.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+          <h5 style="color: red; text-align: center;">
+              price : 25 ₹
+            </h5>
+           <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+
+            </div>
+            </div> 
             </div>  
         </div>
         <div class="row" style="color: #0064">
             <div class="col-md-12 well" >
               <h2 ><strong style="color: #ffbb2b" id="nonvage1">Nonvage</strong></h2><br>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-              <br>
-              <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+             <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/nonvage2.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div> 
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/nonvage3.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+          <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+
+
+        <div class="column1"> 
+        <div class="content"> 
+                    <img src= "image/nonvage4.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+            <h5 style="color: red;  text-align: center;">
+              price : 25 ₹
+            </h5>
+            <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+            </div>
+            </div>
+        <div class="column1"> 
+        <div class="content"> 
+                     <img src= "image/nonvage1.jpg"
+            alt="" style="width:100% ; height:  200px"></a> 
+          <h5 style="color: red; text-align: center;">
+              price : 25 ₹
+            </h5>
+           <div class="AddToCart" style="background-color: #0064;text-align: center">
+                                            <button>
+                                                <img src="./image/cart-2.svg" alt="">
+                                                <span><a href="AddtoCart.html">Add to cart</a></span>
+                                            </button>
+                                        </div>
+
+            </div>
+            </div> 
             </div>  
         </div>
  
