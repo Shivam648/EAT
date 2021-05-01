@@ -4,7 +4,7 @@
 + Under  Construction
 
 ```
-@octocat :+1: We are still working on this :shipit:
+:+1: We are still working on this :shipit:
 
 ![alt text](home_banner.jpg)
 # EAT
