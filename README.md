@@ -4,6 +4,7 @@
 + Under  Construction
 
 ```
+@octocat :+1: We are still working on this :shipit:
 
 ![alt text](home_banner.jpg)
 # EAT
@@ -15,5 +16,4 @@ Now imagine this one: Once seated, customers can immediately view the menu via t
 
 So, That;s why we are come with this concepts to tabletop ordering system or payment system.......!!
 
-[](tabletop.mp4)
 
