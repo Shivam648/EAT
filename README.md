@@ -5,7 +5,7 @@
 
 ```
 :two_men_holding_hands:
-We are still working on this :shipit:
+We are still working on it :shipit:
 
 ![alt text](home_banner.jpg)
 # EAT
