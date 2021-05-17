@@ -8,7 +8,8 @@
 We are still working on it :shipit:
 
 ![alt text](home_banner.jpg)
-# EAT
+
+<h1>Project Goal</h1>
 
 Contactless Ordering and Payment System. 
 In the typical restaurant scenario: After guests are seated, they wait for a server to show up with menus. They may take drink orders, but who knows when they’ll be back to ask about appetizers, or answer questions about the menu. Then there’s that inevitable awkward moment when we stare intently at our server, waiting to catch his eye so we can flag him down for a refill or get us check. We’ve all been there, it’s not fun.
